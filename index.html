@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5 my-5">
+                <div class="logo-wapper">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="logo" srcset="">
+                </div>
+                <div class="header-text">
+                    <h2>Recent logins</h2>
+                    <p>Click your picture or add an account.</p>
+                </div>
+                <div class="box-wapper">
+                    <div class="box1"> 
+                        <img src="images/image1.png" alt="" srcset="">
+                        <h3>Ârîjít</h3>
+                    </div>
+                    <div class="box1">
+                        <!-- <img src="https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/4rnXbyIZ7vG.png" alt="" srcset="">
+                        <h3>Ârîjít</h3> -->
+                    </div>
+                </div>
+                <div class="box-wapper1">
+                    <div class="header-text">
+                        <p id="text1"></p>
+                        <p id="text2"></p>
+                        <p id="text3"></p>
+                        <p id="text4"></p>
+                        <p id="text5"></p>
+                        <p id="text6"></p>
+                        <p id="text7"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 my-8">
+                <div class="login-form">
+                    <!-- first-from -->
+                    <form action="" id="first-from">
+                        <div class="input-from">
+                            <input type="text" placeholder="Email address or phone number" value="" name="uname"
+                                class="type-off" id="emailshow">
+                        </div>
+                        <div class="input-from">
+                            <input type="password" placeholder="Password" value="" name="pass" class="type-off" id="showpassword">
+                            <button type="button" class="btn1" onclick="showPass()">
+                                <div class="button-img">
+                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/je5FEJkU1_K.png" alt=""
+                                        srcset="" id="showIcon">
+                                </div>
+                            </button>
+                        </div>
+                        <div class="input-button">
+                            <button type="button" class="login-button" onclick="submtted()">log in</button>
+                        </div>
+                        <div class="input-button">
+                            <button type="button" class="forget-button"><a href="#">Forgotten password?</a></button>
+                        </div>
+                        <div class="input-button">
+                            <button type="button" class="creat-button" onclick="changeFrom()"><a href="#">Create new account</a></button>
+                        </div>
+                    </form>
+
+                    <!-- second-from -->
+                    <form action="" id="second-from">
+                        <div class="input-from">
+                            <input type="text" placeholder="Enter your First name" value="" name="uname"
+                                class="type-off" id="firstname">
+                        </div>
+                        <div class="input-from">
+                            <input type="text" placeholder="Enter your Last name" value="" name="pass" class="type-off" id="lastname" >
+                        </div>
+                        <div class="input-from">
+                            <input type="number" placeholder="Enter your Age" value="" name="pass" class="type-off" id="number">
+                        </div>
+                        <div class="input-from">
+                            <input type="date" placeholder="Enter your date of birth" value="" name="pass" class="type-off" id="date" >
+                        </div>
+                        <div class="input-from">
+                            <input type="text" placeholder="Enter your address" value="" name="pass" class="type-off" id="address">
+                        </div>
+                        <div class="input-button">
+                            <button type="button" class="login-button" onclick="showData()">Sing up</button>
+                        </div>  
+                        <div class="input-button">
+                            <button type="button" class="creat-button" onclick="changeFrom1()"><a href="#">Log in here</a></button>
+                        </div>
+                    </form>
+                    <div class="footer-para">
+                        <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
