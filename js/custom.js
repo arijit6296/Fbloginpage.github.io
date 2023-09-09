@@ -100,10 +100,15 @@ var userData = [
   },
 ];
 
-userData.splice(2, 1);
-var userData1 = userData;
-console.log(userData1 , 'userData');
+// userData.splice(2, 1);
+// var userData1 = userData;
+// console.log(userData1 , 'userData');
 
-// for (let i = 0; i <= userData.length - 1; i++) {
-//   console.log( new Date().getFullYear() - userData[i].age);
-// }
+for (let i = 0; i <= userData.length - 1; i++) {
+  console.log(userData[i].firstName);
+  (document.getElementById("text1").innerHTML = userData[i].firstName),
+    userData[i].lastName,
+    userData[i].age,
+    userData[i].dob,
+    userData[i].address;
+}
