@@ -103,14 +103,14 @@ var userData = [
 // userData.splice(2, 1);
 // var userData1 = userData;
 // console.log(userData1 , 'userData');
-const dataList = document.getElementById('list-items'); 
+// const dataList = document.getElementById('list-items'); 
 
-for (let i = 0; i <= userData.length - 1; i++) {
-  const item = userData[i];
-  const listItem = document.createElement("li");
-  listItem.innerHTML= `<strong>${i+1}</strong>`;
-  const subList = document.createElement("ul");
-  listItem.appendChild(subList); //  
-  dataList.appendChild(listItem);
-}
+// for (let i = 0; i <= userData.length - 1; i++) {
+//   const item = userData[i];
+//   const listItem = document.createElement("li");
+//   listItem.innerHTML= `<strong>${i+1}</strong>`;
+//   const subList = document.createElement("ul");
+//   listItem.appendChild(subList); //  
+//   dataList.appendChild(listItem);
+// }
 
