@@ -99,16 +99,18 @@ var userData = [
     address: "Berachampa , North 24 parganas",
   },
 ];
-
+// `${}` //concat
 // userData.splice(2, 1);
 // var userData1 = userData;
 // console.log(userData1 , 'userData');
+const dataList = document.getElementById('list-items'); 
 
 for (let i = 0; i <= userData.length - 1; i++) {
-  console.log(userData[i].firstName);
-  (document.getElementById("text1").innerHTML = userData[i].firstName),
-    userData[i].lastName,
-    userData[i].age,
-    userData[i].dob,
-    userData[i].address;
+  const item = userData[i];
+  const listItem = document.createElement("li");
+  listItem.innerHTML= `<strong>${i+1}</strong>`;
+  const subList = document.createElement("ul");
+  listItem.appendChild(subList); //  
+  dataList.appendChild(listItem);
 }
+
