@@ -110,23 +110,44 @@ var userData = [
 // userData.splice(2, 1);
 // var userData1 = userData;
 // console.log(userData1 , 'userData');
-// const dataList = document.getElementById('list-items'); 
+const dataList = document.getElementById('list-items');
 
-// for (let i = 0; i <= userData.length - 1; i++) {
-//   const item = userData[i];
-//   const listItem = document.createElement("li");
-//   listItem.innerHTML= `<strong>${i+1}</strong>`;
-//   const subList = document.createElement("ul");
-//   listItem.appendChild(subList); //  
-//   dataList.appendChild(listItem);
-//   const showDob = new Date().getFullYear() - userData[i].age;
-
-  
-//   if (showDob <= 2004 ) {
-//     console.log(showDob , "You are seleted")
-//   }else{
-//     console.log(showDob , "You are not disqualify")
-//   }
-// };
+for (let i = 0; i <= userData.length - 1; i++) {
+  const item = userData[i];
+  const listItem = document.createElement("li");
+  listItem.innerHTML = `<strong>${i + 1}</strong>`;
+  const subList = document.createElement("ul");
+  listItem.appendChild(subList); //  
+  dataList.appendChild(listItem);
+  const showDob = new Date().getFullYear() - userData[i].age;
 
 
+  // if (showDob >= 2002 && showDob <= 2004  ) {
+  //   console.log(showDob , "You are seleted") // && amp person
+  // }else{
+  //   console.log(showDob , "You are not disqualify")
+  // }
+  if (showDob >= 2002 && showDob <= 2003) {
+    console.log(showDob, "you are eligable")
+  }else{
+    console.log(showDob, "you are not eligable")
+  }
+
+};
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const date = new Date().getDay();
+console.log()
+if(weekday[date]=="Sunday"){
+console.log(weekday[date], "I am eating Chicken")
+}else if(weekday[date]=="Monday"){
+  console.log(weekday[date], "I am going to Office")
+}else if(weekday[date]=="Tuesday" || weekday[date]=="Friday"){
+  console.log(weekday[date], "I am eating veg")
+}else if(weekday[date]=="Wednesday"){
+  console.log(weekday[date], "I am eating non veg")
+}else if(weekday[date]=="Thursday"){
+  console.log(weekday[date], "I am going to date with a girl")
+}else{
+  console.log(weekday[date], "I am going to Temple")
+}
