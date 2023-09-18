@@ -98,19 +98,35 @@ var userData = [
     dob: "02-09-2003",
     address: "Berachampa , North 24 parganas",
   },
+  {
+    firstName: "arpan",
+    lastName: "Dey",
+    age: 18,
+    dob: "02-09-2003",
+    address: "Berachampa , North 24 parganas",
+  },
 ];
-// `${}` //concat
+// `${}` 
 // userData.splice(2, 1);
 // var userData1 = userData;
 // console.log(userData1 , 'userData');
-// const dataList = document.getElementById('list-items'); 
+const dataList = document.getElementById('list-items'); 
 
-// for (let i = 0; i <= userData.length - 1; i++) {
-//   const item = userData[i];
-//   const listItem = document.createElement("li");
-//   listItem.innerHTML= `<strong>${i+1}</strong>`;
-//   const subList = document.createElement("ul");
-//   listItem.appendChild(subList); //  
-//   dataList.appendChild(listItem);
-// }
+for (let i = 0; i <= userData.length - 1; i++) {
+  const item = userData[i];
+  const listItem = document.createElement("li");
+  listItem.innerHTML= `<strong>${i+1}</strong>`;
+  const subList = document.createElement("ul");
+  listItem.appendChild(subList); //  
+  dataList.appendChild(listItem);
+  const showDob = new Date().getFullYear() - userData[i].age;
+
+  
+  if (showDob <= 2004 ) {
+    console.log(showDob , "You are seleted")
+  }else{
+    console.log(showDob , "You are not disqualify")
+  }
+};
+
 
