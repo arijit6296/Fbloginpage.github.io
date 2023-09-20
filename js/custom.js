@@ -129,25 +129,48 @@ for (let i = 0; i <= userData.length - 1; i++) {
   // }
   if (showDob >= 2002 && showDob <= 2003) {
     console.log(showDob, "you are eligable")
-  }else{
+  } else {
     console.log(showDob, "you are not eligable")
   }
 
 };
 
-const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const date = new Date().getDay();
 console.log()
-if(weekday[date]=="Sunday"){
-console.log(weekday[date], "I am eating Chicken")
-}else if(weekday[date]=="Monday"){
+if (weekday[date] == "Sunday") {
+  console.log(weekday[date], "I am eating Chicken")
+} else if (weekday[date] == "Monday") {
   console.log(weekday[date], "I am going to Office")
-}else if(weekday[date]=="Tuesday" || weekday[date]=="Friday"){
+} else if (weekday[date] == "Tuesday" || weekday[date] == "Friday") {
   console.log(weekday[date], "I am eating veg")
-}else if(weekday[date]=="Wednesday"){
+} else if (weekday[date] == "Wednesday") {
   console.log(weekday[date], "I am eating non veg")
-}else if(weekday[date]=="Thursday"){
+} else if (weekday[date] == "Thursday") {
   console.log(weekday[date], "I am going to date with a girl")
-}else{
+} else {
   console.log(weekday[date], "I am going to Temple")
+}
+
+const nameList = "Arijit Ghosal";
+const nameSplite = nameList.split(' ')
+// console.log(nameSplite);
+// document.write("FirstName" , nameSplite[0] , "LastName" , nameSplite[1])
+// document.write(`FirstName ${nameSplite[0]} LastName ${nameSplite[1]}`)
+
+const weekdays = "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday";
+const weekdaysSplite = weekdays.split(', ')
+// console.log(weekdaysSplite)
+
+// const paragraph = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+// const changeParagraph = paragraph.replace('Lorem' , 'Arijit')
+// const changeParagraph = paragraph.replaceAll('Lorem' , 'Arijit')
+//  console.log(changeParagraph)
+
+const paragraph = "The quick brown fox jumps over the lazy dog";
+const search = "dog";
+if (paragraph.includes(search)){
+  console.log(`The ${search} is found`)
+}else{
+  console.log(`The ${search} is not found`)
 }
