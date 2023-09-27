@@ -110,56 +110,56 @@ var userData = [
 // userData.splice(2, 1);
 // var userData1 = userData;
 // console.log(userData1 , 'userData');
-const dataList = document.getElementById('list-items');
+// const dataList = document.getElementById('list-items');
 
-for (let i = 0; i <= userData.length - 1; i++) {
-  const item = userData[i];
-  const listItem = document.createElement("li");
-  listItem.innerHTML = `<strong>${i + 1}</strong>`;
-  const subList = document.createElement("ul");
-  listItem.appendChild(subList); //  
-  dataList.appendChild(listItem);
-  const showDob = new Date().getFullYear() - userData[i].age;
+// for (let i = 0; i <= userData.length - 1; i++) {
+//   const item = userData[i];
+//   const listItem = document.createElement("li");
+//   listItem.innerHTML = `<strong>${i + 1}</strong>`;
+//   const subList = document.createElement("ul");
+//   listItem.appendChild(subList); //  
+//   dataList.appendChild(listItem);
+//   const showDob = new Date().getFullYear() - userData[i].age;
 
 
-  // if (showDob >= 2002 && showDob <= 2004  ) {
-  //   console.log(showDob , "You are seleted") // && amp person
-  // }else{
-  //   console.log(showDob , "You are not disqualify")
-  // }
-  if (showDob >= 2002 && showDob <= 2003) {
-    console.log(showDob, "you are eligable")
-  } else {
-    console.log(showDob, "you are not eligable")
-  }
+//   if (showDob >= 2002 && showDob <= 2004  ) {
+//     console.log(showDob , "You are seleted") // && amp person
+//   }else{
+//     console.log(showDob , "You are not disqualify")
+//   }
+//   if (showDob >= 2002 && showDob <= 2003) {
+//     console.log(showDob, "you are eligable")
+//   } else {
+//     console.log(showDob, "you are not eligable")
+//   }
 
-};
+// };
 
-const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const date = new Date().getDay();
-console.log()
-if (weekday[date] == "Sunday") {
-  console.log(weekday[date], "I am eating Chicken")
-} else if (weekday[date] == "Monday") {
-  console.log(weekday[date], "I am going to Office")
-} else if (weekday[date] == "Tuesday" || weekday[date] == "Friday") {
-  console.log(weekday[date], "I am eating veg")
-} else if (weekday[date] == "Wednesday") {
-  console.log(weekday[date], "I am eating non veg")
-} else if (weekday[date] == "Thursday") {
-  console.log(weekday[date], "I am going to date with a girl")
-} else {
-  console.log(weekday[date], "I am going to Temple")
-}
+// const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// const date = new Date().getDay();
+// console.log()
+// if (weekday[date] == "Sunday") {
+//   console.log(weekday[date], "I am eating Chicken")
+// } else if (weekday[date] == "Monday") {
+//   console.log(weekday[date], "I am going to Office")
+// } else if (weekday[date] == "Tuesday" || weekday[date] == "Friday") {
+//   console.log(weekday[date], "I am eating veg")
+// } else if (weekday[date] == "Wednesday") {
+//   console.log(weekday[date], "I am eating non veg")
+// } else if (weekday[date] == "Thursday") {
+//   console.log(weekday[date], "I am going to date with a girl")
+// } else {
+//   console.log(weekday[date], "I am going to Temple")
+// }
 
-const nameList = "Arijit Ghosal";
-const nameSplite = nameList.split(' ')
+// const nameList = "Arijit Ghosal";
+// const nameSplite = nameList.split(' ')
 // console.log(nameSplite);
 // document.write("FirstName" , nameSplite[0] , "LastName" , nameSplite[1])
 // document.write(`FirstName ${nameSplite[0]} LastName ${nameSplite[1]}`)
 
-const weekdays = "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday";
-const weekdaysSplite = weekdays.split(', ')
+// const weekdays = "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday";
+// const weekdaysSplite = weekdays.split(', ')
 // console.log(weekdaysSplite)
 
 // const paragraph = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
@@ -167,10 +167,66 @@ const weekdaysSplite = weekdays.split(', ')
 // const changeParagraph = paragraph.replaceAll('Lorem' , 'Arijit')
 //  console.log(changeParagraph)
 
-const paragraph = "The quick brown fox jumps over the lazy dog";
-const search = "dog";
-if (paragraph.includes(search)){
-  console.log(`The ${search} is found`)
-}else{
-  console.log(`The ${search} is not found`)
+// const paragraph = "The quick brown fox jumps over the lazy dog";
+// const search = "dog";
+// if (paragraph.includes(search)){
+//   console.log(`The ${search} is found`)
+// }else{
+//   console.log(`The ${search} is not found`)
+// }
+
+// const userData2 = {
+//   firstName: "arpan",
+//   lastName: "Dey",
+//   age: 18,
+//   dob: "02-09-2003",
+//   address: "Berachampa , North 24 parganas",
+// }
+
+// ... spread operator
+// const newObj = {
+//       ...userData2,
+//       location: 'Kolkata',
+//     }
+
+// const assignObject = Object.assign(userData2,extraData)
+// const keyValue = Object.entries(assignObject)
+// console.log(newObj,"assignObject")
+// constructor(){}
+// let user = new Object(); // Object Constractor.
+// let user1 = {}; // Object Literal.
+
+// Named function
+// function abc(){
+//   console.log("Hii My Name is Arijit")
+// }
+// abc()
+
+// Anonymous Function
+// const hello = function (name) {
+//   console.log(`Hello ${name}`)
+// }
+// hello("arijit")
+
+// Arrow function
+// const hallo = (name)=>console.log(`${name}`)
+// hallo("Arijit Ghosal")
+
+// IIFE Function (Immediately Invoked Function Expression)
+// (function(){
+//   const massage = "Hii how are you?";
+//   console.log(massage)
+// })()
+
+// Higher Order Function
+// const array =[20,40,60]
+// const newArray = array.map((Element)=> Element+10)
+// console.log(newArray)
+
+// Constructor Function
+function person(name,dob){
+  this.name = name
+  this.dob = dob
 }
+const userData2 = new person('arijit', '24-09-2002')
+console.log(`hallo ${userData2.name} and ${userData2.dob}`)
