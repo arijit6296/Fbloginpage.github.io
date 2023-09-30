@@ -67,45 +67,8 @@ function showData() {
     dateShow.value = "";
     addressShow.value = "";
   }
-}
+};
 
-var userData = [
-  {
-    firstName: "Arijit",
-    lastName: "Ghosal",
-    age: 21,
-    dob: "02-09-2002",
-    address: "Berachampa , North 24 parganas",
-  },
-  {
-    firstName: "Ram",
-    lastName: "Das",
-    age: 23,
-    dob: "02-09-2000",
-    address: "Berachampa , North 24 parganas",
-  },
-  {
-    firstName: "Syam",
-    lastName: "Mandal",
-    age: 25,
-    dob: "02-09-1998",
-    address: "Berachampa , North 24 parganas",
-  },
-  {
-    firstName: "Akash",
-    lastName: "Dey",
-    age: 20,
-    dob: "02-09-2003",
-    address: "Berachampa , North 24 parganas",
-  },
-  {
-    firstName: "arpan",
-    lastName: "Dey",
-    age: 18,
-    dob: "02-09-2003",
-    address: "Berachampa , North 24 parganas",
-  },
-];
 // `${}` 
 // userData.splice(2, 1);
 // var userData1 = userData;
@@ -224,9 +187,81 @@ var userData = [
 // console.log(newArray)
 
 // Constructor Function
-function person(name,dob){
-  this.name = name
-  this.dob = dob
+// function person(name,dob){
+//   this.name = name
+//   this.dob = dob
+// }
+// const userData2 = new person('arijit', '24-09-2002')
+// console.log(`hallo ${userData2.name} and ${userData2.dob}`)
+
+// function buttonClick(){
+//   let alartBox = alert("You click this button")
+// }
+
+// const buttonClick = function buttonClick(){
+//   let alartBox = alert("You click this button")
+// }
+
+// const buttonClick = ()=> console.log("You click this button")
+
+// (function(){
+//   let alartBox = alert("You click this button")
+// })()
+
+// for(let i=0; i<=5; i++){
+
+// }
+
+// for(let data of userData ){
+//   console.table(data)
+// }
+var userData = [
+  {
+    firstName: "Arijit",
+    lastName: "Ghosal",
+    massage: "Make Your Therapist Proud.",
+    mobileNumber:8476464543,
+    active:0,
+  },
+  {
+    firstName: "Syam",
+    lastName: "Das",
+    massage: "Revitalize your beauty… Revitalize your soul.",
+    mobileNumber:9356374573,
+    active:1,
+  },
+  {
+    firstName: "Akash",
+    lastName: "Dey",
+    massage: "Make yourself a priority. ",
+    mobileNumber:9889747856,
+    active:1,
+  },
+  {
+    firstName: "Ram",
+    lastName: "Das",
+    massage: "Your health is in reliable hands!",
+    mobileNumber:9876545467,
+    active:0,
+  },
+  {
+    firstName: "Ratan",
+    lastName: "Das",
+    massage: "Feel fit and fall in love with massage.",
+    mobileNumber:9874785756,
+    active:1,
+  },
+];
+
+const dataList = document.getElementById('list-ul');
+for (let i = 0; i <= userData.length - 1; i++) {
+    const item = userData[i];
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `<p>First Name: ${ item.firstName}</p>`; 
+    const dataItem = document.createElement("ul");
+    const listItems = document.createElement("li");
+    listItems.innerHTML =  `<p>Last Name: ${ item.lastName}</p>`; 
+    dataList.appendChild(listItem);
+    listItem.appendChild(dataItem);
+    dataItem.appendChild(listItems);
 }
-const userData2 = new person('arijit', '24-09-2002')
-console.log(`hallo ${userData2.name} and ${userData2.dob}`)

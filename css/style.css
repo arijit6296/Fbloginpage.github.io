@@ -291,3 +291,13 @@ form {
 #second-from{
   display: none;
 }
+
+#list-ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+#list-ul li p{
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+}
